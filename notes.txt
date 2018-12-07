@@ -1,0 +1,19 @@
+get polygon
+get original line segment squaredLength
+pick first line segment that matches that squaredLength
+get normalDirection, direction of original line segment
+new line segment's direction has to be opposite, normalDirection needs to be the same
+from these, calculate rotation and translation
+
+rotation = original direction + 180 degrees - new direction
+translation
+get centroid of boundingBox2d of original
+get midpoint of original line
+get midpoint of target line
+translate centroid -> midpoint of original line
+translate midpoint of original line + border
+translate midpoint of target line -> centroid
+use interpolate to get end vector
+
+http://package.elm-lang.org/packages/opensolid/svg/3.0.0/OpenSolid-Svg
+http://www.colourlovers.com/api/palettes/random?format=json
